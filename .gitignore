@@ -4,9 +4,10 @@
 
 # Database
 
-*.sqlite3
+fold/db.sqlite3
 
 # Other
 
 *.xml
 *.iml
+Pipfile.lock

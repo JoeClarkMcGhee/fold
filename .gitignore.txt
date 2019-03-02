@@ -1,0 +1,12 @@
+# Untracked files
+
+*.pyc
+
+# Database
+
+*.sqlite3
+
+# Other
+
+*.xml
+*.iml

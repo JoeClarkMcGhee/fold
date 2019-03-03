@@ -1,6 +1,10 @@
 # Untracked files
 
+# ingnore pycache files
 *.pyc
+fold/blog/__pycache__/*
+fold/home/__pycache__/*
+__pycache__
 
 # Database
 

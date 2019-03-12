@@ -15,3 +15,7 @@ fold/db.sqlite3
 *.xml
 *.iml
 Pipfile.lock
+
+# VS Code artifacts
+
+*.vscode

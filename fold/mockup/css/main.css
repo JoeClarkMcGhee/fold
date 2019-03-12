@@ -1,0 +1,19 @@
+.navbar-nav {
+    margin-bottom: -1.1rem;
+}
+
+a {
+    font-size: 1.5rem;
+}
+
+.navbar-brand{
+    font-size: 3.25rem;
+}
+
+.bg-light{
+    background-color: #ffffff!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, 0.9);
+}

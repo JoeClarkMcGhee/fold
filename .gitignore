@@ -16,6 +16,6 @@ fold/db.sqlite3
 *.iml
 Pipfile.lock
 
-# VS Code artifacts
+# VS Code user settings
 
-*.vscode
+.vscode/

@@ -19,8 +19,9 @@ a {
   }
 
 .contact-form:focus {
-    box-shadow: 0 0 0 0rem #3A3335;
-    border-color: #3A3335;
+    box-shadow: 0 0 0 0rem #ced4da;
+    border: 1px solid #ced4da;
+    border-bottom: none;
 }
 .contact-form:hover {
     background: #3A3335;
@@ -37,10 +38,12 @@ a {
     background: transparent;
     outline: none;
     border-radius: 0;
+    border-bottom: none;
 }
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, 0.9);
 }
+    
 
 body { 
     padding-top: 10rem;
@@ -71,7 +74,24 @@ body {
   -moz-transition-duration: 0.5s;
   -o-transition-duration: 0.5s;
 }
+.contact-form-textarea {
+    border: 1px solid #ced4da;
+}
+.contact-form-submit {
+    border: 1px solid #ced4da;
+    cursor: pointer;
+    border-top: none;
+}
 
 .contact-form-submit:hover {
     color: #FFFFFF;
+}
+
+.contact-form-control.is-valid, .was-validated .contact-form-control:valid, .contact-form-control.is-valid:focus,
+.was-validated .contact-form-control:valid:focus   {
+    border: 1px solid #ced4da;
+    border-color: #ced4da;
+    padding-right: none;
+    background-image: none;
+    box-shadow: 0 0 0 0px #ced4da;;
 }

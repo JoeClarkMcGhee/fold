@@ -13,7 +13,31 @@ a {
 .bg-light{
     background-color: #ffffff!important;
 }
+/* overwrite stock bootstrap class */
+.contact-form-group {
+    margin-bottom: 0rem;
+  }
 
+.contact-form:focus {
+    box-shadow: 0 0 0 0rem #3A3335;
+    border-color: #3A3335;
+}
+.contact-form:hover {
+    background: #3A3335;
+    color: #FFFFFF;
+
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+.contact-form {
+    font-size: 0.875em;
+    color: #3A3335;
+    background: transparent;
+    outline: none;
+    border-radius: 0;
+}
 .navbar-light .navbar-nav .nav-link {
     color: rgba(0, 0, 0, 0.9);
 }
@@ -33,6 +57,10 @@ body {
   color: #333;
 }
 
+.contact-form-submit {
+    font-size: 0.875em;
+    color: #3A3335;
+}
 .footer .social {
   -webkit-transform: scale(0.8);
   /* Browser Variations: */
@@ -44,3 +72,6 @@ body {
   -o-transition-duration: 0.5s;
 }
 
+.contact-form-submit:hover {
+    color: #FFFFFF;
+}

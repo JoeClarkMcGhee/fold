@@ -14,6 +14,7 @@ fold/db.sqlite3
 
 *.xml
 *.iml
+.idea/*
 Pipfile.lock
 
 # VS Code user settings

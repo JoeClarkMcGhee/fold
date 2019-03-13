@@ -5,8 +5,9 @@
   }
 
 .contact-form:focus {
-    box-shadow: 0 0 0 0rem #3A3335;
-    border-color: #3A3335;
+    box-shadow: 0 0 0 0rem #ced4da;
+    border: 1px solid #ced4da;
+    border-bottom: none;
 }
 .contact-form:hover {
     background: #3A3335;
@@ -23,19 +24,27 @@
     background: transparent;
     outline: none;
     border-radius: 0;
+    border-bottom: none;
 
 }
+.contact-form-textarea {
+    border: 1px solid #ced4da;
+}
 .contact-form-submit {
-    font-size: 0.875em;
-    color: #3A3335;
-
-    outline: none;
+    border: 1px solid #ced4da;
     cursor: pointer;
-
-    border: solid 1px #3A3335;
     border-top: none;
 }
 
 .contact-form-submit:hover {
     color: #FFFFFF;
+}
+
+.contact-form-control.is-valid, .was-validated .contact-form-control:valid, .contact-form-control.is-valid:focus,
+.was-validated .contact-form-control:valid:focus   {
+    border: 1px solid #ced4da;
+    border-color: #ced4da;
+    padding-right: none;
+    background-image: none;
+    box-shadow: 0 0 0 0px #ced4da;;
 }

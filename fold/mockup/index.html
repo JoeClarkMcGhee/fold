@@ -8,6 +8,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <title>Fold</title>
   </head>
@@ -35,7 +37,35 @@
         </ul>
       </div>
     </nav>
-
+  <!--Begin Location Snippet-->
+  <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center">Location</h1>
+        </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>FOLD</h3>
+          <hr align="left" width="50%">
+          <h4 class="pt-2"><i class="fas fa-map-marker-alt" style="color:#000"></i> Address</h4>
+          <ul class="list-unstyled">
+            <li>Gillian House</li>
+            <li>Stephenson St.</li>
+            <li>London</li>
+            <li>E16 4SA</li>
+          </ul>
+        </div>
+        <div class="col-sm-8">
+          <div class="mapouter">
+            <div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=FOLD%2C%20gillian%20house%2C%20Stephenson%20Street%2C%20London&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Location Snippet-->
     <!-- import jQuery and bootstrap library's -->
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>

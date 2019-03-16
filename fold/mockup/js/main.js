@@ -23,3 +23,7 @@ $("#navbar a").click(function(){
    scrollTop:$("#" + $(this).data('value')).offset().top - 100
   },500)
  })
+
+$( ".nav-item a" ).on("click", function(){
+  $('.navbar-toggler').click();
+});

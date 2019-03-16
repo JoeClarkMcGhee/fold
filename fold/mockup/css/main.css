@@ -126,4 +126,10 @@ body {
 
 .card-body a .card-title {
     color: black;
+    text-decoration: none;
+}
+
+.card-body a:hover {
+    color: black;
+    text-decoration: none;
 }

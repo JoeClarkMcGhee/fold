@@ -114,3 +114,16 @@ body {
     background-image: none;
     box-shadow: 0 0 0 0px #ced4da;;
 }
+
+.card-img img {
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+}
+
+.blog .row .col-md-4 {
+    padding-bottom: 0.5rem;
+}
+
+.card-body a .card-title {
+    color: black;
+}

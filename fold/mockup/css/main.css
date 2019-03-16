@@ -1,5 +1,11 @@
-.navbar-nav {
-    margin-bottom: -1.1rem;
+body {
+    padding-top: 6rem!important;
+}
+
+img {
+    padding-left: 0.5rem;
+    padding-bottom: 1rem;
+    padding-right: 0.5rem;
 }
 
 a {
@@ -31,6 +37,7 @@ body {
 
 .footer a {
   color: #333;
+
 }
 
 .footer .social {

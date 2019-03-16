@@ -10,9 +10,21 @@ a {
     font-size: 3.25rem;
 }
 
+/*Section headers*/
+.container .row .col .text-left {
+    font-size: 1.7rem;
+}
+
 .bg-light{
     background-color: #ffffff!important;
 }
+
+/*Address icon*/
+.row .col-sm-4 .pt-2 {
+    font-size: 1.3rem;
+}
+
+
 /* overwrite stock bootstrap class */
 .contact-form-group {
     margin-bottom: 0rem;

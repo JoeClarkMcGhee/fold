@@ -1,30 +1,76 @@
 {% extends "base.html" %}
 {% load static wagtailcore_tags widget_tweaks %}
-
 {% block content %}
+<!--Begin Location Snippet-->
+<div class="container"  id="Contact">
+  <div class="row">
+    <div class="col">
+      <h1 class="text-left">Contact</h1>
+    </div>
+  </div>
+  <hr>
+  <div class="row">
+    <div class="col-sm-4">
 
-<h1>Contact</h1>
+
+      <h4 class="pt-2"><i class="fas fa-map-marker-alt" style="color:#000"></i> Address</h4>
+      <ul class="list-unstyled">
+        <li>Gillian House</li>
+        <li>Stephenson St.</li>
+        <li>London</li>
+        <li>E16 4SA</li>
+      </ul>
+    </div>
+    <div class="col-sm-8">
+      <div class="mapouter">
+        <div class="gmap_canvas"><iframe src="https://maps.google.com/maps?q=FOLD%2C%20gillian%20house%2C%20Stephenson%20Street%2C%20London&t=&z=13&ie=UTF8&iwloc=&output=embed"
+            width="100%" height="420" frameborder="0" style="border:0" allowfullscreen></iframe></div>
+      </div>
+    </div>
+  </div>
+<!-- Begin Contact Form Snippet-->
 <br>
+<br>
+<div class="row align-items-center">
 
-<form action="{% pageurl page %}" method="POST">
+  <!--Promoter & Booker Contact Info-->
+  <div class="col-sm-6">
+      <dl>
+        <dt><h5>Music & Bookings</h5></dt>
+        <dd><a href="mailto:placeholder@placeholder.com" target="_blank"><p class="small">placeholder@placeholder.com</p></a></dd>
+        <dt><h5>Press</h5></dt>
+        <dd><a href="mailto:placeholder@placeholder.com" target="_blank"><p class="small">placeholder@placeholder.com</p></a></dd>
+      </dl>
+  </div>
+
+<!--Generic Contact Form-->
+<div class="col-sm-6">
+  <h5 class="text-left">General Enquiries</h5>
+<form class="needs-validation" action="{% pageurl page %}" method="POST" novalidate>
     {% csrf_token %}
 
-    {% if form.non_field_errors %}
-      <div class="alert alert-danger" role="alert">
-        {% for error in form.non_field_errors %}
-          {{ error }}
-        {% endfor %}
+    {% for field in form.visible_fields %}
+    <!-- TAKE THIS LOGIC OUT OF HTML -->
+    {% if field.name == "message" %}
+    <div class="form-group contact-form-group">
+      <!-- Problem if run along side grammarly -->
+      {% render_field field placeholder=field.name|upper class+="form-control contact-form contact-form-textarea contact-form-control" rows="5" %}
+    </div>
+      {% else %}
+      <div class="form-group contact-form-group">
+        {% render_field field placeholder=field.name|upper class+="form-control contact-form contact-form-control" %}
       </div>
     {% endif %}
-
-    {% for field in form.visible_fields %}
-      <div class="form-group">
-        {{ field.label_tag }}
-        {% render_field field class+="form-control" %}
-      </div>
     {% endfor %}
 
-    <button type="submit" class="btn btn-primary" >Submit</button>
+    <div class="form-group contact-form-group">
+      <button type="submit"
+        class="btn btn-dark form-control contact-form contact-form-submit contact-form-control">SEND
+        MESSAGE</button>
+    </div>
 </form>
 
+</div>
+</div>
+</div>
 {% endblock %}

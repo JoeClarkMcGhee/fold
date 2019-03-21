@@ -50,7 +50,9 @@ INSTALLED_APPS = [
 
     #installed apps
     'blog',
-    'widget_tweaks'
+    'widget_tweaks',
+    'el_pagination',
+    'wagtailmenus'
 ]
 
 MIDDLEWARE = [

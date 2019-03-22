@@ -33,9 +33,44 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
+        <!-- navbar -->
 
-        {% block content %}{% endblock %}
+        <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+            <a class="navbar-brand" href="#" data-value="Events">FOLD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-value="Events">Listings</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-value="Blog">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" data-value="Contact">Contact</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.residentadvisor.net/club.aspx?id=155399">Tickets</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        {% block content %}
+        
 
+  
+      {% endblock %}
+        <!-- footer -->
+        <div class="footer mt-4">
+            <div class="text-center center-block">
+                <a href="https://twitter.com/elonmusk"><i class="fa fa-twitter-square fa-2x social"></i></a>
+                <a href="https://www.instagram.com/fold.ldn/?hl=en"><i class="fa fa-instagram fa-2x social"></i></a>
+                <a href="https://www.facebook.com/fld.ldn/"><i class="fa fa-facebook-square fa-2x social"></i></a>
+            </div>
+        </div>
         {# Global javascript #}
             <!-- import jQuery and bootstrap library's -->
         <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>

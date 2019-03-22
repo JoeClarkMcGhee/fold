@@ -54,7 +54,7 @@
     {% if field.name == "message" %}
     <div class="form-group contact-form-group">
       <!-- Problem if run along side grammarly -->
-      {% render_field field placeholder=field.name|upper class+="form-control contact-form contact-form-textarea contact-form-control" rows="5" %}
+      {% render_field field placeholder=field.name|upper class+="form-control contact-form contact-form-textarea contact-form-control" rows="5" data-gramm_editor="false" %}
     </div>
       {% else %}
       <div class="form-group contact-form-group">

@@ -46,14 +46,12 @@
 <!--Generic Contact Form-->
 <div class="col-sm-6">
   <h5 class="text-left">General Enquiries</h5>
-<form class="needs-validation" action="{% pageurl page %}" method="POST" novalidate>
+  <form class="needs-validation" action="{% pageurl page %}" method="POST" novalidate>
     {% csrf_token %}
 
     {% for field in form.visible_fields %}
-    <!-- TAKE THIS LOGIC OUT OF HTML -->
     {% if field.name == "message" %}
     <div class="form-group contact-form-group">
-      <!-- Problem if run along side grammarly -->
       {% render_field field placeholder=field.name|upper class+="form-control contact-form contact-form-textarea contact-form-control" rows="5" data-gramm_editor="false" %}
     </div>
       {% else %}
